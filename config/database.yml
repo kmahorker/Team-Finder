@@ -5,14 +5,9 @@ development:
   host: sql3.freesqldatabase.com
   database: sql3216872
   pool: 5
-<<<<<<< HEAD
   port: 3306
   username: sql3216872
   password: hwbyHI6d71
-=======
-  username: root
-  password: password
->>>>>>> 2d59c3d5a9a12a628c1e897ed919777a0865435a
 
 test:
   adapter: mysql2
@@ -21,14 +16,9 @@ test:
   host: sql3.freesqldatabase.com
   database: sql3216872
   pool: 5
-<<<<<<< HEAD
   port: 3306
   username: sql3216872
   password: hwbyHI6d71
-=======
-  username: root
-  password: password
->>>>>>> 2d59c3d5a9a12a628c1e897ed919777a0865435a
 
 production:
   adapter: mysql2
@@ -37,11 +27,6 @@ production:
   host: sql3.freesqldatabase.com
   database: sql3216872
   pool: 5
-<<<<<<< HEAD
   port: 3306
   username: sql3216872
   password: hwbyHI6d71
-=======
-  username: root
-  password: password
->>>>>>> 2d59c3d5a9a12a628c1e897ed919777a0865435a
