@@ -2,25 +2,31 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: teamfinder_development
+  host: sql3.freesqldatabase.com
+  database: sql3216872
   pool: 5
-  username: root
-  password: root
+  port: 3306
+  username: sql3216872
+  password: hwbyHI6d71
 
 test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: teamfinder_test
+  host: sql3.freesqldatabase.com
+  database: sql3216872
   pool: 5
-  username: root
-  password: root
+  port: 3306
+  username: sql3216872
+  password: hwbyHI6d71
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: teamfinder_production
+  host: sql3.freesqldatabase.com
+  database: sql3216872
   pool: 5
-  username: root
-  password: root
+  port: 3306
+  username: sql3216872
+  password: hwbyHI6d71
