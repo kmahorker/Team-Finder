@@ -17,8 +17,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="375">
+              <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -30,11 +30,10 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1516444612000" expanded="true" signature="37953:37970" ph="..." />
-                <marker date="1516444612000" expanded="true" signature="37953:37988" ph="..." />
-                <marker date="1516444612000" expanded="true" signature="37953:38001" ph="..." />
-                <marker date="1516444612000" expanded="true" signature="37953:38408" ph="..." />
-                <marker date="1516444612000" expanded="true" signature="38052:38393" ph="..." />
+                <marker date="1516445072000" expanded="true" signature="38513:38555" ph="..." />
+                <marker date="1516445072000" expanded="true" signature="38513:38573" ph="..." />
+                <marker date="1516445072000" expanded="true" signature="38513:38586" ph="..." />
+                <marker date="1516445072000" expanded="true" signature="38513:38601" ph="..." />
               </folding>
             </state>
           </provider>
@@ -358,12 +357,12 @@
       <workItem from="1516443191155" duration="18000" />
       <workItem from="1516443371514" duration="12000" />
       <workItem from="1516443478716" duration="221000" />
-      <workItem from="1516443744498" duration="751000" />
+      <workItem from="1516443744498" duration="1120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3028000" />
+    <option name="totallyTimeSpent" value="3397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="264" y="23" width="1165" height="873" extended-state="0" />
@@ -648,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/vik/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -693,19 +684,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1516444612000" expanded="true" signature="37953:37970" ph="..." />
-            <marker date="1516444612000" expanded="true" signature="37953:37988" ph="..." />
-            <marker date="1516444612000" expanded="true" signature="37953:38001" ph="..." />
-            <marker date="1516444612000" expanded="true" signature="37953:38408" ph="..." />
-            <marker date="1516444612000" expanded="true" signature="38052:38393" ph="..." />
+            <marker date="1516445072000" expanded="true" signature="38513:38555" ph="..." />
+            <marker date="1516445072000" expanded="true" signature="38513:38573" ph="..." />
+            <marker date="1516445072000" expanded="true" signature="38513:38586" ph="..." />
+            <marker date="1516445072000" expanded="true" signature="38513:38601" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="375">
+          <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding />
         </state>
       </provider>
