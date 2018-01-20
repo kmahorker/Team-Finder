@@ -22,6 +22,5 @@
 
 .byebug_history
 /.idea
-.idea
-.idea/*
+Team-Finder.iml
 .DS_Store
