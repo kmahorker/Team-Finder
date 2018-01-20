@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  get 'posts/new'
+
+  get 'posts/create'
+
   get 'main/index'
+
+  resources :posts
 
   root 'main#index'
 
