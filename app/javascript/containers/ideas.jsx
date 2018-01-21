@@ -4,10 +4,17 @@ function createIdeaBox(ideaObj, index) {
           <Panel>
               <Panel.Heading>{ideaObj.title}</Panel.Heading>
               <ListGroup>
-                  <ListGroupItem>{ideaObj.description}</ListGroupItem>
+                  <ListGroupItem> Description: {ideaObj.description}</ListGroupItem>
+                  <ListGroupItem> Platforms: {ideaObj.platforms} </ListGroupItem>
+                  <ListGroupItem> Hours Per Week: {ideaObj.hours} </ListGroupItem>
+                  <ListGroupItem> Expected Duration: {ideaObj.weeks} week(s) </ListGroupItem>
+                  <ListGroupItem> Skills: {ideaObj.skills} </ListGroupItem>
+                  <ListGroupItem> Email: {ideaObj.email} </ListGroupItem>
+                  <ListGroupItem> Github: {ideaObj.github} </ListGroupItem>
                   {/*<ListGroupItem>ideaObj.</ListGroupItem>*/}
                   {/*<ListGroupItem>&hellip;</ListGroupItem>*/}
               </ListGroup>
+
           </Panel>
       </div>
     );
