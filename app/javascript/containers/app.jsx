@@ -22,7 +22,7 @@ export default class App extends React.Component {
 
     search(event) {
         var search_term = event.target.value;
-
+        
     }
 
 
