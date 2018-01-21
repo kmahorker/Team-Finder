@@ -9,7 +9,7 @@ import App from '../containers/app';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <App name={"bruce"}/>,
+    <App/>,
     document.body.appendChild(document.createElement('div')),
   )
 });
