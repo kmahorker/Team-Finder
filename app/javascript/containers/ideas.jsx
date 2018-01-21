@@ -1,6 +1,6 @@
 function createIdeaBox(ideaObj, index) {
     return (
-      <div key={"ideaObj" + index}>
+      <div key={"ideaObj" + index} className={"text-secondary"}>
           <h2>{ideaObj.title}</h2>
       </div>
     );
