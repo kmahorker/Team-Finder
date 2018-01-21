@@ -32,7 +32,6 @@ export default class Ideas extends React.Component {
 
         return (
             <div>
-                <Button bsStyle="primary"> Default </Button>
                 {ideas_html_array}
             </div>
         );
