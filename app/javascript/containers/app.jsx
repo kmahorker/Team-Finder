@@ -45,7 +45,8 @@ export default class App extends React.Component {
             <div>
                 <Create onResult={()=>
                 {
-                        $("#ideas").load(location.href + " #ideas");
+                        // $("#ideas").load(location.href + " #ideas");
+                    location.reload();
                 }}/>
 
 
