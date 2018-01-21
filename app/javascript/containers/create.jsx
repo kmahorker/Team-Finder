@@ -1,6 +1,6 @@
 import React from 'react';
 
-const idea_url = "/create";
+const idea_url = "/posts";
 
 export default class Create extends React.Component {
     submit() {
