@@ -62,7 +62,7 @@ export default class App extends React.Component {
                         // $("#ideas").load(location.href + " #ideas");
                     location.reload();
                 }}/>
-                <section style={{paddingBottom: "5px"}}>
+                <section style={{ paddingTop: "12px", paddingBottom: "12px"}}>
                 <input ref={input_ref}/>
 
                 <button
