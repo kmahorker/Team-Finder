@@ -26,6 +26,8 @@ export default class Create extends React.Component {
                 <input placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
                 <input placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
                 <input placeholder={"Email"} type={"email"} ref={"email"}/><br/>
+                <input placeholder={"Skills"}  ref={"skills"}/><br/>
+                <input placeholder={"Platforms"} ref={"platforms"}/><br/>
                 <input placeholder={"Github"} ref={"github"}/><br/>
 
                 {/*<form ref={"skills"}>*/}
