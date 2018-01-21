@@ -1,7 +1,8 @@
 function createIdeaBox(ideaObj, index) {
     return (
-      <div key={"ideaObj" + index}>
+      <div key={"ideaObj" + index} style={{color: "red"}}>
           <h2>{ideaObj.title}</h2>
+          {/*<p> {"hello"}</p>*/}
       </div>
     );
 }
