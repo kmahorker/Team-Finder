@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'main/index'
 
+  get 'posts/search' =>'posts#search'
+
   resources :posts
 
   root 'main#index'
