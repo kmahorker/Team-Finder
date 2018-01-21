@@ -2,8 +2,17 @@
 // like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
 // of the page.
 
-import React from 'react'
+import React from 'react';
 import Ideas from './ideas';
+import Create from './create';
+
+
+const input_ref = "myinput",
+    resource = "/posts";
+
+function searchUrl(search_term) {
+    return resource + "?term=" + search_term;
+}
 
 export default class App extends React.Component {
     constructor() {
@@ -14,26 +23,33 @@ export default class App extends React.Component {
     }
 
     componentWillMount() {
-        let that = this;
-        $.get('/posts', function (data) {
-            that.setState({ideas: JSON.parse(data)});
-        });
+        $.get(resource, function (data) {
+            this.setState({ideas: JSON.parse(data)});
+        }.bind(this));
     }
 
-    search(target) {
-        var search_term = target.value;
-        let that = this;
-        $.get("/posts?term=" + search_term, function (data) {
-            that.setState({ideas: JSON.parse(data)});
-        });
+    search({value}) {
+        $.get(
+            searchUrl(value),
+            function (data) {
+                this.setState({
+                    ideas: JSON.parse(data)
+                });
+            }.bind(this)
+        );
     }
 
 
     render() {
         return (
             <div>
-                <input ref={"myinput"}/>
-                <button onClick={()=>this.search(this.refs["myinput"])}>Search</button>
+                <Create onResult={(data)=>this.state.ideas.unshift(data)}/>
+
+
+                <input ref={input_ref}/>
+                <button onClick={this.search.bind(this, this.refs[input_ref])}>
+                    Search
+                </button>
 
                 <Ideas ideas={this.state.ideas}/>
             </div>
