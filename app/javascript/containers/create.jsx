@@ -31,13 +31,12 @@ export default class Create extends React.Component {
                 {/*controlId="formBasicText"*/}
                 {/*validationState={this.getValidationState()}*/}
                 {/*>*/}
-                {/*<FormControl type={"text"} placeholder={"Title"} ref =>{"title"}> </FormControl> <br/>*/}
-                {/*<FormControl placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>*/}
-                {/*<FormControl placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>*/}
-                {/*<FormControl placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>*/}
-                {/*<FormControl placeholder={"Email"} type={"email"} ref={"email"}/><br/>*/}
-                {/*<FormControl type= {"text"} placeholder={"Github"} ref={"github"}/><br/>*/}
-                {/*</FormGroup>*/}
+                <input type={"text"} placeholder={"Title"} ref =>{"title"}> </input> <br/>
+                <input placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
+                <input placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
+                <input placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
+                <input placeholder={"Email"} type={"email"} ref={"email"}/><br/>
+                <input type= {"text"} placeholder={"Github"} ref={"github"}/><br/>
 
                 {/*<form ref={"skills"}>*/}
                     {/*<input type="checkbox" value={2}>Java</input>*/}

@@ -2,7 +2,9 @@ function createIdeaBox(ideaObj, index) {
     return (
       <div key={"ideaObj" + index}>
           <Panel bsStyle="primary">
-              <Panel.Heading>{ideaObj.title}</Panel.Heading>
+              <Panel.Heading>
+                  <Panel.Title componentClass="h2"> {ideaObj.title} </Panel.Title>
+              </Panel.Heading>
               <ListGroup>
                   <ListGroupItem> Description: {ideaObj.description}</ListGroupItem>
                   <ListGroupItem> Platforms: {ideaObj.platforms} </ListGroupItem>
