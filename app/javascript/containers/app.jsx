@@ -6,8 +6,11 @@ import React from 'react'
 
 export default class App extends React.Component {
     render() {
+        console.log($);
+        console.log(_.each);
         return (
-            <div>Hello {this.props.name}!</div>
+            <div>
+            </div>
         );
     }
 }
