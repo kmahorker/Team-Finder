@@ -15,8 +15,12 @@ function createIdeaBox(ideaObj, index) {
                   <ListGroupItem> Github: {ideaObj.github} </ListGroupItem>
                   {/*<ListGroupItem>ideaObj.</ListGroupItem>*/}
                   {/*<ListGroupItem>&hellip;</ListGroupItem>*/}
-                  <ListGroupItem><button onClick={()=>{
-                      document.getElementById("button"+index).innerHTML++;
+                  <ListGroupItem>Upvotes: <button onClick={()=>{
+                      var html = document.getElementById("button"+index);
+                      html.innerHTML++;
+                      delete html.onClick;
+                      delete html.onclick;
+
                   }} id={"button"+index}>{ideaObj.upvote_count}</button></ListGroupItem>
 
               </ListGroup>
