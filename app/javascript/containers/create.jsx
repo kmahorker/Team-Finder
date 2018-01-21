@@ -20,7 +20,7 @@ export default class Create extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{textAlign: "center"}}>
                 <input placeholder={"Title"} ref={"title"}/><br/>
                 <input placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
                 <input placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
