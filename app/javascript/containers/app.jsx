@@ -45,8 +45,9 @@ export default class App extends React.Component {
             <div>
                 <Create onResult={(data)=>
                 {
-                    this.state.ideas.unshift(data);
-                    this.forceRender();
+                    let ideas = this.state.ideas;
+                    ideas.unshift(data);
+                    this.setState({ideas: ideas});
                 }}/>
 
 
