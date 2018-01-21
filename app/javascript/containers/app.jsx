@@ -62,14 +62,17 @@ export default class App extends React.Component {
                         // $("#ideas").load(location.href + " #ideas");
                     location.reload();
                 }}/>
-
+                <section style={{paddingBottom: "5px"}}>
                 <input ref={input_ref}/>
 
                 <button
-                        onClick={this.search.bind(this, this.refs[input_ref])}>
+                        onClick={this.search.bind(this, this.refs[input_ref])}
+                        style={{paddingLeft: "5px"}}
+                >
                     Search
                 </button>
                 <br/>
+                </section>
 
                 <Ideas ideas={this.state.ideas} id={"ideas"}/>
             </div>
