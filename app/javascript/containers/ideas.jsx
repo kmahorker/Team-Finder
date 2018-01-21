@@ -8,6 +8,7 @@ function createIdeaBox(ideaObj, index) {
 }
 
 import React from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 export default class Ideas extends React.Component {
     constructor(props) {
@@ -31,6 +32,7 @@ export default class Ideas extends React.Component {
 
         return (
             <div>
+                <Button bsStyle="primary"> Default </Button>
                 {ideas_html_array}
             </div>
         );

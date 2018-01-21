@@ -5,6 +5,8 @@
 import React from 'react';
 import Ideas from './ideas';
 import Create from './create';
+import Button from 'react-bootstrap/lib/Button';
+
 
 
 const input_ref = "myinput",
@@ -53,9 +55,10 @@ export default class App extends React.Component {
 
 
                 <input ref={input_ref}/>
-                <button onClick={this.search.bind(this, this.refs[input_ref])}>
+                <Button bsStyle="primary"
+                        onClick={this.search.bind(this, this.refs[input_ref])}>
                     Search
-                </button>
+                </Button>
 
                 <Ideas ideas={this.state.ideas} id={"ideas"}/>
             </div>
