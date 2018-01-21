@@ -6,6 +6,7 @@ import React from 'react';
 import Ideas from './ideas';
 import Create from './create';
 import Button from 'react-bootstrap/lib/Button';
+import FormControl from 'react-bootstrap/lib/FormControl';
 
 
 
@@ -54,7 +55,7 @@ export default class App extends React.Component {
                 }}/>
 
 
-                <input ref={input_ref}/>
+                <FormControl ref={input_ref}/>
                 <Button bsStyle="primary"
                         onClick={this.search.bind(this, this.refs[input_ref])}>
                     Search
