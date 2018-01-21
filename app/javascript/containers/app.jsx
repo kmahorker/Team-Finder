@@ -43,11 +43,9 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Create onResult={(data)=>
+                <Create onResult={()=>
                 {
-                    let ideas = this.state.ideas;
-                    ideas.unshift(data);
-                    this.setState({ideas: ideas});
+                        $("#ideas").load(location.href + " #ideas");
                 }}/>
 
 
@@ -56,7 +54,7 @@ export default class App extends React.Component {
                     Search
                 </button>
 
-                <Ideas ideas={this.state.ideas}/>
+                <Ideas ideas={this.state.ideas} id={"ideas"}/>
             </div>
         );
     }
