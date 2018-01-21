@@ -23,7 +23,10 @@ function createIdeaBox(ideaObj, index) {
                       var html = document.getElementById("button"+index);
                       html.innerHTML++;
                       clicked = true;
-                      $.put('/posts/' + index);
+                      $.ajax({
+                          url: '/posts/' + index,
+                          type: 'PUT'
+                      });
 
 
                   }} id={"button"+index}>{ideaObj.upvote_count}</button></ListGroupItem>
