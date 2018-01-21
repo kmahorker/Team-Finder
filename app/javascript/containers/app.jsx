@@ -57,21 +57,31 @@ export default class App extends React.Component {
                     </Navbar.Header>
                 </Navbar>
 
-                <Create onResult={()=>
-                {
-                        // $("#ideas").load(location.href + " #ideas");
-                    location.reload();
-                }}/>
+                <Grid>
+                    <Row className="show-grid">
+                        <Col xs={6} md={4}>
+                            <Create onResult={()=>
+                            {
+                                // $("#ideas").load(location.href + " #ideas");
+                                location.reload();
+                            }}/>
+                        </Col>
+                        <Col xs={12} md={8}>
+                            <Button bsStyle="primary"
+                                    onClick={this.search.bind(this, this.refs[input_ref])}>
+                                Search
+                            </Button>
+
+                            <Ideas ideas={this.state.ideas} id={"ideas"}/>
+                        </Col>
+                    </Row>
+                </Grid>
+
 
 
 
                 <FormControl ref={input_ref}/>
-                <Button bsStyle="primary"
-                        onClick={this.search.bind(this, this.refs[input_ref])}>
-                    Search
-                </Button>
 
-                <Ideas ideas={this.state.ideas} id={"ideas"}/>
             </div>
         );
     }
