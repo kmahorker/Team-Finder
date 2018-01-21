@@ -31,7 +31,7 @@ export default class Create extends React.Component {
                 {/*controlId="formBasicText"*/}
                 {/*validationState={this.getValidationState()}*/}
                 {/*>*/}
-                <input type={"text"} placeholder={"Title"} ref =>{"title"}> </input> <br/>
+                <input type={"text"} placeholder={"Title"} ref ={"title"}> </input> <br/>
                 <input placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
                 <input placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
                 <input placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
