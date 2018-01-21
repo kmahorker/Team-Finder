@@ -33,7 +33,7 @@ export default class Create extends React.Component {
                 {/*</form>*/}
                 {/*Put skills here*/}<br/>
 
-                <button onClick={this.submit.bind(this)}/>
+                <button onClick={this.submit.bind(this)}>Create</button>
             </div>
         );
     }
