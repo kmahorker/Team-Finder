@@ -66,10 +66,11 @@ export default class App extends React.Component {
 
 
                 <FormControl ref={input_ref}/>
-                <Button bsStyle="primary"
+                <button
                         onClick={this.search.bind(this, this.refs[input_ref])}>
                     Search
-                </Button>
+                </button>
+                <br/>
 
                 <Ideas ideas={this.state.ideas} id={"ideas"}/>
             </div>
