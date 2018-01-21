@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180120233816) do
+ActiveRecord::Schema.define(version: 20180121015612) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "title"
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "platforms"
+    t.integer "hours"
+    t.integer "weeks"
+    t.integer "skills"
+    t.string "email"
+    t.string "github"
+    t.timestamp "created_at"
+    t.integer "upvote_count"
   end
 
 end
