@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rabbits
   get 'posts/new'
 
   get 'posts/create'

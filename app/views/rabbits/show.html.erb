@@ -1,0 +1,17 @@
+<% content_for :javascript do %>
+  <%= javascript_pack_tag 'application' %>
+<% end %>
+  <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rabbit.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @rabbit.age %>
+</p>
+
+<%= link_to 'Edit', edit_rabbit_path(@rabbit) %> |
+<%= link_to 'Back', rabbits_path %>
