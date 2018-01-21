@@ -6,11 +6,11 @@ import React from 'react'
 import Ideas from './ideas';
 
 export default class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {ideas: []};
-
-
+    constructor() {
+        super();
+        this.state = {
+            ideas: []
+        };
     }
 
     componentWillMount() {
@@ -20,11 +20,17 @@ export default class App extends React.Component {
         });
     }
 
+    search(event) {
+        var search_term = event.target.value;
+
+    }
 
 
     render() {
         return (
             <div>
+                <input onSubmit={this.search.bind(this)}/>
+
                 <Ideas ideas={this.state.ideas}/>
             </div>
         );
