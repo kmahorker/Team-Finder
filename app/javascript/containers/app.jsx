@@ -43,7 +43,11 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Create onResult={(data)=>this.state.ideas.unshift(data)}/>
+                <Create onResult={(data)=>
+                {
+                    this.state.ideas.unshift(data);
+                    this.forceRender();
+                }}/>
 
 
                 <input ref={input_ref}/>
