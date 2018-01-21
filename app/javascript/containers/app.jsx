@@ -63,9 +63,8 @@ export default class App extends React.Component {
                     location.reload();
                 }}/>
 
+                <input ref={input_ref}/>
 
-
-                <FormControl ref={input_ref}/>
                 <button
                         onClick={this.search.bind(this, this.refs[input_ref])}>
                     Search
