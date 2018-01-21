@@ -52,10 +52,11 @@ export default class App extends React.Component {
                 <Navbar inverse={true}>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a color={"black"} href="#">Find A Team</a>
+                            <a href="/main/index">Find A Team</a>
                         </Navbar.Brand>
                     </Navbar.Header>
                 </Navbar>
+
                 <Create onResult={()=>
                 {
                         // $("#ideas").load(location.href + " #ideas");

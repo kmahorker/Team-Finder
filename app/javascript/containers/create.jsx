@@ -24,7 +24,7 @@ export default class Create extends React.Component {
     render() {
         return (
             <div>
-                <FormControl type={"text"} placeholder={"Title"} ref={"title"}/><br/>
+                <FormControl type={"text"} placeholder={"Title"}inputRef={ref => { this.input = ref; }} ref =>{"title"}/><br/>
                 <FormControl placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
                 <FormControl placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
                 <FormControl placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
