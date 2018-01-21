@@ -34,7 +34,7 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :description, :platforms, :hours, :weeks, :skills, :email, :github)
+      params.permit(:title, :description, :platforms, :hours, :weeks, :skills, :email, :github)
     end
 
 end
