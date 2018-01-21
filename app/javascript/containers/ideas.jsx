@@ -24,7 +24,7 @@ function createIdeaBox(ideaObj, index) {
                       html.innerHTML++;
                       clicked = true;
                       $.ajax({
-                          url: '/posts/' + index,
+                          url: '/posts/' + ideaObj.id,
                           type: 'PUT'
                       });
 
