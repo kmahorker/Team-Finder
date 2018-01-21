@@ -25,11 +25,11 @@ export default class Create extends React.Component {
         return (
             <div>
                 <FormControl type={"text"} placeholder={"Title"} ref={"title"}/><br/>
-                <input placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
-                <input placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
-                <input placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
-                <input placeholder={"Email"} type={"email"} ref={"email"}/><br/>
-                <input placeholder={"Github"} ref={"github"}/><br/>
+                <FormControl placeholder={"Description"} ref={"description"} aria-rowcount="5" aria-colcount="40"/><br/>
+                <FormControl placeholder={"Hours"} type={"number"} ref={"hours"}/><br/>
+                <FormControl placeholder={"Weeks"} type={"number"} ref={"weeks"}/><br/>
+                <FormControl placeholder={"Email"} type={"email"} ref={"email"}/><br/>
+                <FormControl placeholder={"Github"} ref={"github"}/><br/>
 
                 {/*<form ref={"skills"}>*/}
                     {/*<input type="checkbox" value={2}>Java</input>*/}
