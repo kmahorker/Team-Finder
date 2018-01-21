@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def new
   end
 
@@ -10,10 +12,14 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def update
+    post = Post.find(params[:id])
+    post.increment!(:upvote_count)
+    # @post.update(upvote_count: @post.upvote_count)
+  end
+
   def create
-
       @post = Post.new(post_params)
-
       @post.save
       redirect_to @post
   end
