@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Use React for front-end
-gem 'react-rails'
+gem 'webpacker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

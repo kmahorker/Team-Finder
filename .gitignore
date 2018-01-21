@@ -23,4 +23,6 @@
 .byebug_history
 /.idea
 Team-Finder.iml
-.DS_Store
+.DS_Store/public/packs
+/public/packs-test
+/node_modules
