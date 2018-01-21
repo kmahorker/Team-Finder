@@ -20,16 +20,20 @@ export default class App extends React.Component {
         });
     }
 
-    search(event) {
-        var search_term = event.target.value;
-
+    search(target) {
+        var search_term = target.value;
+        let that = this;
+        $.get("/posts?term=" + search_term, function (data) {
+            that.setState({ideas: JSON.parse(data)});
+        });
     }
 
 
     render() {
         return (
             <div>
-                <input onSubmit={this.search.bind(this)}/>
+                <input ref={"myinput"}/>
+                <button onClick={()=>this.search(this.refs["myinput"])}>Search</button>
 
                 <Ideas ideas={this.state.ideas}/>
             </div>
