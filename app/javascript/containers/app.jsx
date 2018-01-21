@@ -49,19 +49,20 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
+                <Navbar>
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                            <a color={"black"} href="#">Find A Team</a>
+                        </Navbar.Brand>
+                    </Navbar.Header>
+                </Navbar>
                 <Create onResult={()=>
                 {
                         // $("#ideas").load(location.href + " #ideas");
                     location.reload();
                 }}/>
 
-                <Navbar>
-                    <Navbar.Header>
-                        <Navbar.Brand>
-                            <a href="#home">Find A Team</a>
-                        </Navbar.Brand>
-                    </Navbar.Header>
-                </Navbar>
+
 
                 <FormControl ref={input_ref}/>
                 <Button bsStyle="primary"
