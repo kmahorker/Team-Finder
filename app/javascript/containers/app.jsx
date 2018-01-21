@@ -7,6 +7,7 @@ import Ideas from './ideas';
 import Create from './create';
 import Button from 'react-bootstrap/lib/Button';
 import FormControl from 'react-bootstrap/lib/FormControl';
+import Navbar from 'react-bootstrap/lib/Navbar';
 
 
 
@@ -54,6 +55,13 @@ export default class App extends React.Component {
                     location.reload();
                 }}/>
 
+                <Navbar>
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                            <a href="#home">Find A Team</a>
+                        </Navbar.Brand>
+                    </Navbar.Header>
+                </Navbar>
 
                 <FormControl ref={input_ref}/>
                 <Button bsStyle="primary"
