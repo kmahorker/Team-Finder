@@ -1,4 +1,5 @@
 function createIdeaBox(ideaObj, index) {
+    var clicked = false;
     return (
       <div key={"ideaObj" + index}>
           <Panel bsStyle="primary">
@@ -16,10 +17,14 @@ function createIdeaBox(ideaObj, index) {
                   {/*<ListGroupItem>ideaObj.</ListGroupItem>*/}
                   {/*<ListGroupItem>&hellip;</ListGroupItem>*/}
                   <ListGroupItem>Upvotes: <button onClick={()=>{
+                      if(clicked)
+                          return;
+
                       var html = document.getElementById("button"+index);
                       html.innerHTML++;
-                      delete html.onClick;
-                      delete html.onclick;
+                      clicked = true;
+                      $.put('/posts/' + index);
+
 
                   }} id={"button"+index}>{ideaObj.upvote_count}</button></ListGroupItem>
 
