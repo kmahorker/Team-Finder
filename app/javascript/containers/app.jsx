@@ -24,7 +24,9 @@ export default class App extends React.Component {
 
     componentWillMount() {
         $.get(resource, function (data) {
-            this.setState({ideas: JSON.parse(data)});
+            var x = JSON.parse(data);
+            x.reverse();
+            this.setState({ideas: x});
         }.bind(this));
     }
 
