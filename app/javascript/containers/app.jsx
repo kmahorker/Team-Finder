@@ -49,7 +49,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Navbar>
+                <Navbar inverse={true}>
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a color={"black"} href="#">Find A Team</a>

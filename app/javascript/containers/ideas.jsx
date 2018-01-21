@@ -1,14 +1,22 @@
 function createIdeaBox(ideaObj, index) {
     return (
-      <div key={"ideaObj" + index} className={"text-secondary"}>
-          <h2>{ideaObj.title}</h2>
-          {/*<p> {"hello"}</p>*/}
+      <div key={"ideaObj" + index}>
+          <Panel>
+              <Panel.Heading>{ideaObj.title}</Panel.Heading>
+              <ListGroup>
+                  <ListGroupItem>{ideaObj.description}</ListGroupItem>
+                  {/*<ListGroupItem>ideaObj.</ListGroupItem>*/}
+                  {/*<ListGroupItem>&hellip;</ListGroupItem>*/}
+              </ListGroup>
+          </Panel>
       </div>
     );
 }
 
 import React from 'react';
-import Button from 'react-bootstrap/lib/Button';
+import Panel from 'react-bootstrap/lib/Panel';
+import ListGroup from 'react-bootstrap/lib/ListGroup';
+import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 
 export default class Ideas extends React.Component {
     constructor(props) {
